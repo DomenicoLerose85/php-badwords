@@ -1,5 +1,4 @@
 <?php  
- $name = 'Domenico'
-
-
+   $name = 'Domenico';
+   echo $name;
 ?>
