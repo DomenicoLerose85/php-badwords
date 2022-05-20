@@ -20,6 +20,8 @@
    <p><?php echo strlen($paragraph); ?> </p>
    <h3>Modified Paragraph</h3>
    <p><?php echo $new_paragraph; ?> </p> 
+   <h3>Modified Paragraph Length</h3>
+   <p><?php echo strlen($new_paragraph); ?> </p>
 </body>
 </html>
 
