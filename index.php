@@ -1,6 +1,13 @@
 <?php  
    $paragraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vel?';
    $new_paragraph = str_replace('dolor', '***', $paragraph);
+   if(isset($_GET[bad_word])){
+      $bad_word = $_GET[bad_word];
+   } else {
+      $bad_word = '';
+   }
+   $bad_word = '***';
+   $_GET[bad_word];
 ?>
 
 
@@ -22,6 +29,8 @@
    <p><?php echo $new_paragraph; ?> </p> 
    <h3>Modified Paragraph Length</h3>
    <p><?php echo strlen($new_paragraph); ?> </p>
+   <h2>Modified Paragraph using GET</h2>
+   <p><?php echo $bad_word; ?> </p>
 </body>
 </html>
 
