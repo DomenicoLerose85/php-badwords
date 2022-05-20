@@ -1,7 +1,9 @@
 <?php  
    $paragraph = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, vel?';
-   // echo $paragraph;
+   $new_paragraph = str_replace('dolor', '***', $paragraph);
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,10 +14,12 @@
    <title>Bad Words</title>
 </head>
 <body>
+   <h1>Lorem Paragraph</h1>
    <p><?php echo $paragraph; ?> </p>
    <h3>Paragraph Length</h3>
    <p><?php echo strlen($paragraph); ?> </p>
-   
+   <h3>Modified Paragraph</h3>
+   <p><?php echo $new_paragraph; ?> </p> 
 </body>
 </html>
 
